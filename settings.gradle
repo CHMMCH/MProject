@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "MProject"
+include ':app'
+
+include ':Mlibrary'
+project(':Mlibrary').projectDir = "../m-library/Mlibrary" as File
+
+include ':MUI'
+project(':MUI').projectDir = "../m-ui/MUI" as File
+include ':common'
