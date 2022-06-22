@@ -1,6 +1,5 @@
 package com.chm.mproj.main;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 

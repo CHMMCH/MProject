@@ -19,6 +19,7 @@ public abstract class MBaseFragment extends Fragment {
 
     protected View layoutView;
 
+    //模板代码
     @LayoutRes
     public abstract int getLayoutId();
 
@@ -28,4 +29,5 @@ public abstract class MBaseFragment extends Fragment {
         layoutView = inflater.inflate(getLayoutId(),container,false);
         return layoutView;
     }
+
 }
